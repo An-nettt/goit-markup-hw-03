@@ -51,9 +51,10 @@ margin-bottom: 0;
 
 .container {
 width: 1200px;
+margin: 0 auto;
+
 outline: 1px solid teal;
-margin-right: auto;
-margin-left: auto;
+
 }
 
 /* Стилі для header */
