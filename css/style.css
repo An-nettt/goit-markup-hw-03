@@ -1,0 +1,231 @@
+/* основний колір тексту #212121; */
+/* додатовий колір тексту background: #757575; */
+/* акцент background: #2196F3; */
+/* текст героя background: #FFFFFF; */
+
+/* основний колір фону #F5F5F5; */
+/* додатковий колір фону #F5F4FA; */
+/* фон героя і футера #2F303A; */
+
+:root {
+    --prymary-text-color:#757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --hero-text: #FFFFFF;
+    --prymary-bgc: #FFFFFF;
+    --secondary-bgc: #F5F4FA;
+    --bgc-hero-footer: #2F303A;
+}
+
+body {
+    color: var(--prymary-text-color);
+    background-color: var(--prymary-bgc);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;    
+}
+
+/* Стилі для header */
+/* Лого */
+.site-logo {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--accent-color);    
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Навігація по сайту */
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* Контакти */
+.contacts .link {
+    color: var(--prymary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/* Кнопки */
+.button {
+    color: var(--hero-text);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #188CE8;
+}
+
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bgc);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--hero-text);
+    background-color: var(--accent-color);
+}
+
+
+/* Стилі для Студія */
+/* Герой */
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: var(--hero-text);    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Секція */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Переваги */
+.features .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.features .text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Команда */
+.team {
+    background-color: var(--secondary-bgc);
+}
+
+.teams .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.teams .text {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+/* Стилі для Портфоліо */
+.projects .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects .text {
+    color: var(--prymary-text-color);
+    font-size: 16px;
+    line-height: 1.88;    
+}
+
+.projects .link {
+    text-decoration: none;
+}
+
+/* Стилі для Footer */
+.footer {
+    background-color: var(--bgc-hero-footer);
+}
+
+.logo-footer {
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.address {
+    color: var(--hero-text);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.contacts-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.address:hover,
+.address:focus,
+.contacts-footer:hover,
+.contacts-footer:focus {
+    color: var(--accent-color);
+}
+
