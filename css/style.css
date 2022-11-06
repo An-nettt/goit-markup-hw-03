@@ -26,7 +26,9 @@ body {
 }
 
 .list {
-    list-style: none;    
+    list-style: none;
+    margin: 0;
+    padding: 0;    
 }
 
 .container {
@@ -40,6 +42,8 @@ body {
 /* Стилі для header */
 /* Лого */
 .site-logo {
+    margin-right: 93px;
+
     font-family: 'Raleway', sans-serif;
     color: #000000;
     font-weight: 700;
@@ -54,16 +58,30 @@ body {
 }
 
 /* Навігація по сайту */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-
-    
-    outline: 2px solid teal
 }
 
 .site-nav .link:hover, 
@@ -76,6 +94,15 @@ body {
 }
 
 /* Контакти */
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
 .contacts .link {
     color: var(--prymary-text-color);
     font-style: normal;
@@ -84,8 +111,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    
-    outline: 2px solid teal
 }
 
 .contacts .link:hover,
@@ -134,9 +159,13 @@ body {
 /* Герой */
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--hero-text);    
     font-weight: 900;
     font-size: 44px;
@@ -144,6 +173,8 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    outline: 2px solid teal;
 }
 
 /* Секція */
