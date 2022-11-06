@@ -252,8 +252,6 @@ ul {
 /* Чим ми займаємося */
 .work-list {
     display: flex;
-
-    outline: 2px solid teal;
 }
 
 .work-list .item:not(:last-child) {
