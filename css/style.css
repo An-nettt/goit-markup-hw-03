@@ -8,7 +8,7 @@
 /* фон героя і футера #2F303A; */
 
 :root {
-    --prymary-text-color: #757575;
+    --prymary-text-color:#757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --hero-text: #FFFFFF;
@@ -25,46 +25,13 @@ body {
     letter-spacing: 0.03em;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 .list {
-    list-style: none;
-}
-
-h1 h2 h3 h4 h5 h6 p ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-
-    outline: 1px solid teal;
-
+    list-style: none;    
 }
 
 /* Стилі для header */
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
 /* Лого */
 .site-logo {
-    margin-right: 93px;
-
     font-family: 'Raleway', sans-serif;
     color: #000000;
     font-weight: 700;
@@ -74,36 +41,21 @@ nav {
 }
 
 .logo {
-    color: var(--accent-color);
+    color: var(--accent-color);    
     font-family: 'Raleway', sans-serif;
 }
 
 /* Навігація по сайту */
-.site-nav {
-    display: flex;
-    background-color: red;
-}
-
-.site-nav .item:not(:last-child) {
-    margin-right: 50px;
-}
-
 .site-nav .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-
-    background-color: tomato;
 }
 
-.site-nav .link:hover,
+.site-nav .link:hover, 
 .site-nav .link:focus {
     color: var(--accent-color);
 }
@@ -113,18 +65,7 @@ nav {
 }
 
 /* Контакти */
-.contacts {
-    display: flex;
-    margin-left: auto;
-}
-
-.contacts .item +.item {
-    margin-left: 50px;
-}
-
 .contacts .link {
-
-
     color: var(--prymary-text-color);
     font-style: normal;
     font-weight: 500;
@@ -183,7 +124,7 @@ nav {
 }
 
 .hero-title {
-    color: var(--hero-text);
+    color: var(--hero-text);    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -244,7 +185,7 @@ nav {
 .projects .text {
     color: var(--prymary-text-color);
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.88;    
 }
 
 .projects .link {
@@ -287,3 +228,4 @@ nav {
 .contacts-footer:focus {
     color: var(--accent-color);
 }
+
