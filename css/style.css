@@ -74,20 +74,27 @@ font-family: 'Raleway', sans-serif;
 }
 
 /* Навігація по сайту */
-nav {
-display: flex;
+.site-nav {
+    display: flex;
 }
 
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
 
-.site-nav .link {    
-color: var(--title-text-color);
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-text-decoration: none;
+.site-nav .link {  
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+        
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-outline: 1px solid tomato;
+    outline: 1px solid tomato;
 }
 
 .site-nav .link:hover, 
@@ -100,6 +107,14 @@ color: var(--accent-color);
 }
 
 /* Контакти */
+.contacts {
+    display: flex;
+}
+
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
 .contacts .link {
 color: var(--prymary-text-color);
 font-style: normal;
