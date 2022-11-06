@@ -43,6 +43,11 @@ ul {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .container {
     width: 1200px;
@@ -275,9 +280,13 @@ ul {
     margin-right: 30px;    
 }
 
-.teams .title {
+.team-members {
     padding-top: 30px;
-    padding-bottom: 10px;    
+    padding-bottom: 30px;
+}
+
+.teams .title {
+    padding-bottom: 10px;
 
     color: var(--title-text-color);
     font-weight: 500;
@@ -287,13 +296,10 @@ ul {
 }
 
 .teams .text {
-    padding-bottom: 30px;
-
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
-
 
 /* Портфоліо */
 .projects .title {
@@ -320,6 +326,9 @@ ul {
 }
 
 .logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -328,12 +337,17 @@ ul {
     text-decoration: none;
 }
 
+.footer .item + .item {
+    margin-top: 9px;
+}
 .address {
     color: var(--hero-text);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+
+    outline: 2px solid teal;
 }
 
 .contacts-footer {
