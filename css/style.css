@@ -31,12 +31,19 @@ body {
     padding: 0;    
 }
 
+h1;
+h2;
+h3;
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 .container {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-        
-    outline: 2px solid tomato;
 }
 
 /* Стилі для header */
@@ -120,17 +127,24 @@ body {
 
 /* Кнопки */
 .button {
+    display: inline-block;
     color: var(--hero-text);
     background-color: var(--accent-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer
+}
+
+.button.primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: transparent;
 }
 
 .button.primary:hover,
@@ -160,11 +174,13 @@ body {
 .hero {
     background-color: #2F303A;
     text-align: center;
+
+    outline: 2px solid tomato;
 }
 
 .hero-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     color: var(--hero-text);    
     font-weight: 900;
@@ -173,8 +189,6 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    outline: 2px solid teal;
 }
 
 /* Секція */
@@ -184,6 +198,8 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    outline: 2px solid teal;
 }
 
 /* Переваги */
