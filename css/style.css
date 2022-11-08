@@ -69,7 +69,9 @@ img {
 }
 
 /* Стилі для header */
-.header 
+header { 
+    border-bottom: 1px solid #ECECEC;
+}
 
 /* Лого */
 .site-logo {
