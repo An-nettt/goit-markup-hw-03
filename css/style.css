@@ -184,8 +184,6 @@ header {
 
 
 .button.secondary {
-    margin-bottom: 50px;
-    margin-right: 8px;
     padding: 6px 22px;
     border: transparent;
 
@@ -195,10 +193,6 @@ header {
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer
-}
-
-.button.secondary:last-child {
-    margin-right: 0;
 }
 
 .button.secondary:hover,
@@ -213,11 +207,16 @@ header {
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--hero-text);    
     font-weight: 900;
@@ -250,6 +249,10 @@ header {
     display: flex;
 }
 
+.features .item {
+    width: calc((100%-90)/4);
+}
+
 .features .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -269,8 +272,16 @@ header {
 }
 
 /* Чим ми займаємося */
+.section.about {
+    padding-top: 0;
+}
+
 .work-list {
     display: flex;
+}
+
+.work-list .item {
+    width: calc((100%-60)/3);
 }
 
 .work-list .item:not(:last-child) {
@@ -287,6 +298,7 @@ header {
 }
 
 .teams .item {
+    width: calc((100%-90)/4);
     background-color: var(--prymary-bgc);
 }
 
@@ -318,7 +330,19 @@ header {
 /* Портфоліо */
 /* Фільтри */
 .filters {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content:center;
+
     text-align: center;
+}
+
+.filters .item {
+    margin-right: 8px;
+}
+
+.filters .item:last-child {
+    margin-right: 0;
 }
 
 /* Проекти */
@@ -354,7 +378,7 @@ header {
 }
 
 .projects .title {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -371,12 +395,14 @@ header {
 
 /* Footer */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--bgc-hero-footer);
 }
 
 .logo-footer {
-    display: inline-block;
-    margin-top: 60px;
+    display: inline-block;      
     margin-bottom: 20px;
 
     color: #FFFFFF;
@@ -385,10 +411,6 @@ header {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-}
-
-.address-contacts {
-    padding-bottom: 60px;
 }
 
 .footer .item + .item {
