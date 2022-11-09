@@ -250,7 +250,7 @@ header {
 }
 
 .features .item {
-    width: calc((100%-90)/4);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .features .item:not(:last-child) {
@@ -281,7 +281,7 @@ header {
 }
 
 .work-list .item {
-    width: calc((100%-60)/3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .work-list .item:not(:last-child) {
@@ -298,7 +298,7 @@ header {
 }
 
 .teams .item {
-    width: calc((100%-90)/4);
+    flex-basis: calc((100% - 90px) / 4);
     background-color: var(--prymary-bgc);
 }
 
@@ -353,7 +353,8 @@ header {
 
 .projects .item {
     margin-right: 30px;
-    margin-bottom: 30px;     
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .projects .item:nth-child(3n) {
@@ -365,7 +366,7 @@ header {
 }
 
 .projects .link {
-    width: calc((100%-60)/3);
+    flex-basis: calc((100% - 90px) / 4);
 
     text-decoration: none;    
 }
